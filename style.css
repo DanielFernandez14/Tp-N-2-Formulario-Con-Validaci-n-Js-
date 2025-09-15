@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1{
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    
+}
