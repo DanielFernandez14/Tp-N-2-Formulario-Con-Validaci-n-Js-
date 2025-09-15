@@ -11,6 +11,7 @@
         <h1>Registro de evento</h1>
         <hr>
     </header>
+    <main>
     <form id="registroForm">
         <label for="nombre">Nombre: </label>
         <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre..." required autocomplete="off">
@@ -19,9 +20,13 @@
         <input type="number" id="edadd" name="edadd" placeholder="Ingrese su edad..." required autocomplete="off">
 
         <button type="submit" class="btnForm">Enviar</button>
-
-        <div id="mensajeJS"></div>
     </form>
+        
+    <div class="cartelDiv" id="mensajeJS"></div>
+    
+    </main>
+
+
     <script src="script.js"></script>
 </body>
 </html>
