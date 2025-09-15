@@ -10,12 +10,20 @@ function validacionDeFormulario(event) {
 const nombre = inputNombre.value.trim()
 const edad = Number(inputEdad.value);
 
+mensajes.classList.remove("ingresoExitoso", "ingresoFallido")
+
+let clase;
+
 if (edad >= 18) {
-    mensajes.textContent= ` ✅ Tenes acceso ${nombre}`
+    mensajes.textContent= ` ✅ Tenes acceso ${nombre} porque tu edad es de ${edad}`
+    clase = "ingresoExitoso"
 } else {
-    mensajes.textContent= ` 📛 no Tenes acceso ${nombre}, tu edad es menor a 18`
+    mensajes.textContent= ` 📛 No tenes acceso ${nombre}, tu edad es de ${edad} y tenes que ser mayor a 18 `
+    clase = "ingresoFallido"
 }
-console.log(nombre + edad)
+console.log(nombre, edad)
+
+mensajes.classList.add(clase)
 }
 
 form.addEventListener("submit", validacionDeFormulario)
